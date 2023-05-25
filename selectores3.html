@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y Pseudoelementos</title>
+    <style>
+        /*PseudoClases*/
+        
+        div{
+            background-color: beige;
+            color: red;
+        }
+
+        div:hover{
+            background-color: blueviolet;
+            color: beige;
+        }
+
+        input:hover{
+            background-color: blueviolet;
+        }
+        input:focus{
+            background-color: red;
+            color: aqua;
+        }
+        input:required{
+            background-color: black;
+            color: white;
+        }
+        /*Pseudoelementos(::)*/
+
+        .cuadro{
+            width: 100px;
+            height: 100px;
+            background-color:lightblue ;
+            float: left;
+            border: 1px solid green;   
+        }    
+
+        .cuadro:first-child{
+            background-color:papayawhip;
+
+        }
+        .cuadro:last-child{
+            background-color: orange;
+        }
+
+        .cuadro:nth-child(odd){
+            background-color: red;
+        }
+
+        p::first-letter{
+            color: violet;
+        }
+        p::before{
+            content: '❤';
+        }
+
+    </style>
+
+</head>
+<body>
+
+    
+    <div>Esto es un div</div>
+    <div>Esto es un div</div>
+    <div>Esto es un div</div>
+    <div>Esto es un div</div>
+
+    <input type="text" name="" id="" placeholder="Hola" required>
+    <input type="text" name="" id="" placeholder="hola?">
+    <input type="text" name="" id="" placeholder="Adios">
+
+    <div class="container">
+
+        <div class="cuadro">1</div>
+        <div class="cuadro">2</div>
+        <div class="cuadro">3</div>
+        <div class="cuadro">4</div>
+        <div class="cuadro">5</div>
+        <div class="cuadro">6</div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <p>（＾∀＾●）ﾉｼ</p>
+        <p>(￣o￣) . z Z</p>
+        <p>(_　_)。゜zｚＺ</p>
+        <p>ヾ(￣▽￣) Bye~Bye~</p>
+    </div>
+    
+
+</html>
